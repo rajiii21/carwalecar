@@ -21,7 +21,7 @@ const Routing = () => {
                     <BrowserRouter basename="comparecar">
                     <Header />
                          <Routes>
-                              <Route exact path="/" element={<Home />}></Route>
+                              <Route exact path="/comparecar" element={<Home />}></Route>
                               <Route path="/branddetail/:brand" element={<Branddetail />}></Route>
                               <Route path="/filterprice/:btn/:price" element={<CaramountDetail />}></Route>
                               <Route path="/cardetail/:name" element={<Cardetail />} />
