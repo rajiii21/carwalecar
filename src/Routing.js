@@ -18,10 +18,10 @@ const Routing = () => {
      return (
           <div>
                <globalState.Provider value={{ state, dispatch }}>
-                    <BrowserRouter>
+                    <BrowserRouter basename="comparecar">
                     <Header />
                          <Routes>
-                              <Route path="/" element={<Home />}></Route>
+                              <Route exact path="/" element={<Home />}></Route>
                               <Route path="/branddetail/:brand" element={<Branddetail />}></Route>
                               <Route path="/filterprice/:btn/:price" element={<CaramountDetail />}></Route>
                               <Route path="/cardetail/:name" element={<Cardetail />} />
